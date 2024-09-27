@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Vitalité Cuisine | Personalize</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="personalizado">
+        <div class="content">
+            <nav>
+                <a class="title" href="index.html"><p><i><strong>vitalité</strong>cuisine</i></p></a>
+              <ul>
+                <a class="btnper" href="login.html" type="text/href"><button>Login</button></a>
+              </ul>
+            </nav>
+          </div>
+    </header>
+
+    <main>
+        <h1>Selecione suas preferências alimentares</h1>
+
+        <form id="preference-form">
+            <h3>O que você gosta de comer?</h3>
+            <label><input type="checkbox" name="likes" value="Frango"> Frango</label>
+            <label><input type="checkbox" name="likes" value="Peixe"> Peixe</label>
+            <label><input type="checkbox" name="likes" value="Carne Vermelha"> Carne Vermelha</label>
+            <label><input type="checkbox" name="likes" value="Vegetais"> Legumes e Vegetais</label>
+            <label><input type="checkbox" name="likes" value="Ovos"> Ovos</label>
+            <label><input type="checkbox" name="likes" value="Tapioca"> Tapioca</label>
+           
+
+            <h3>O que você não gosta de comer?</h3>
+            <label><input type="checkbox" name="dislikes" value="Frango"> Frango</label>
+            <label><input type="checkbox" name="dislikes" value="Peixe"> Peixe</label>
+            <label><input type="checkbox" name="dislikes" value="Carne Vermelha"> Carne Vermelha</label>
+            <label><input type="checkbox" name="dislikes" value="Vegetais"> Legumes e Vegetais</label>
+            <label><input type="checkbox" name="likes" value="Ovos"> Ovos</label>
+            <label><input type="checkbox" name="likes" value="Tapioca"> Tapioca</label>
+
+            <h3>Restrições alimentares</h3>
+            <label><input type="checkbox" name="restrictions" value="Glúten"> Sem Glúten</label>
+            <label><input type="checkbox" name="restrictions" value="Lactose"> Sem Lactose</label>
+
+            <button type="submit">Gerar Refeições</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="meal-plan"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
